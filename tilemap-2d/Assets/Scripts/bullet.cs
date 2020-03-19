@@ -2,20 +2,20 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class bullet : MonoBehaviour
+public class Bullet : MonoBehaviour
 {
+    private float destroyTime = 1.5f;
     public float speed;
-    private float timeDestroy;
+
     // Start is called before the first frame update
     void Start()
     {
-        timeDestroy = 1.0f;
-        Destroy(gameObject, timeDestroy);
+        Destroy(gameObject, destroyTime);
     }
 
     // Update is called once per frame
     void Update()
     {
-        transform.Translate(Vector2.right * speed * Time.deltaTime);
+        transform.Translate(Vector3.right * speed * Time.deltaTime);
     }
 }

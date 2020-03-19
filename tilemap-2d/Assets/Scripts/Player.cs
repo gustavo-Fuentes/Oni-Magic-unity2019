@@ -14,12 +14,14 @@ public class Player : MonoBehaviour
     private Animator anim;
     private SpriteRenderer sprite;
     public Transform groundCheck;
-    
-    //variaveis do tiro
+
+    // atributos do tiro
+    private float fireRate = 0.5f;
+    private float nextFire;
+    public GameObject bulletPrefab;
     public Transform bulletSpawn;
-    public GameObject bulletObject;
-    public float fireRate;
-    public float nextFire;
+    
+    
 
     void Awake() 
     {
@@ -44,10 +46,11 @@ public class Player : MonoBehaviour
             jumping = true;
         }
 
-        if (Input.GetButton("Fire1"))
+        if (Input.GetButton("Fire1") && Time.time > nextFire)
         {
             Fire();
         }
+        
     }
     private void FixedUpdate()
     {
@@ -74,17 +77,26 @@ public class Player : MonoBehaviour
     void flip() 
     {
         sprite.flipX = !sprite.flipX;
+        if(!sprite.flipX)
+        {
+            bulletSpawn.position = new Vector3(this.transform.position.x + 0.1f, bulletSpawn.position.y, bulletSpawn.position.z);
+        }
+        else
+        {
+            bulletSpawn.position = new Vector3(this.transform.position.x - 0.1f, bulletSpawn.position.y, bulletSpawn.position.z);
+        }
     }
 
     void Fire()
     {
-        anim.SetTrigger("Fire");
-
         nextFire = Time.time + fireRate;
-        GameObject cloneBullet = Instantiate(bulletObject,bulletSpawn.position, bulletSpawn.rotation); // (qual objeto, posição, rotação)
-        //if()
-        //{
+        GameObject tempBullet = Instantiate(bulletPrefab, bulletSpawn.position, bulletSpawn.rotation);
 
-        //}
+        if(sprite.flipX)
+        {
+            tempBullet.transform.eulerAngles = new Vector3(0, 0, 180);
+        }
     }
+
+    
 }
