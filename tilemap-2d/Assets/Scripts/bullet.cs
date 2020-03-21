@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Bullet : MonoBehaviour
 {
-    private float destroyTime = 1.5f;
+    private float destroyTime = 1.0f;
     public float speed;
 
     // Start is called before the first frame update
@@ -18,4 +18,9 @@ public class Bullet : MonoBehaviour
     {
         transform.Translate(Vector3.right * speed * Time.deltaTime);
     }
+
+    //void OnTriggerEnter2D()
+    //{
+      //  Destroy(gameObject);
+    //}
 }

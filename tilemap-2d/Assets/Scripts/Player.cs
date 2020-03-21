@@ -16,7 +16,7 @@ public class Player : MonoBehaviour
     public Transform groundCheck;
 
     // atributos do tiro
-    private float fireRate = 0.5f;
+    public float fireRate;
     private float nextFire;
     public GameObject bulletPrefab;
     public Transform bulletSpawn;
@@ -89,6 +89,7 @@ public class Player : MonoBehaviour
 
     void Fire()
     {
+        anim.SetTrigger("Fire");
         nextFire = Time.time + fireRate;
         GameObject tempBullet = Instantiate(bulletPrefab, bulletSpawn.position, bulletSpawn.rotation);
 
