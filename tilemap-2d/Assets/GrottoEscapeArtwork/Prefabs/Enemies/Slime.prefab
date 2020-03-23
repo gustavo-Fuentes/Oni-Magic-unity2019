@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 340407102}
   - component: {fileID: 8299357023843089074}
   - component: {fileID: 1138521794454041961}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Slime
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -153,5 +153,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5127fe310f3e70a40be227b653c28498, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  distanceAttack: 2
-  speed: 1
+  distanceAttack: 1.5
+  speed: 0.5

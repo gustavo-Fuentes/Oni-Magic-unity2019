@@ -5,7 +5,7 @@ using UnityEngine;
 public class EnemyController : MonoBehaviour
 {
 
-    protected int health;
+    public int enemyHealth = 100;
     public float distanceAttack;
     public float speed;
     protected bool isMoving = false;
@@ -14,7 +14,22 @@ public class EnemyController : MonoBehaviour
     protected Animator anim;
     protected Transform player;
     protected SpriteRenderer sprite;
+    
 
+    public void takeDamage(int damage)
+    {
+        enemyHealth -= damage;
+        if(enemyHealth <= 0)
+        {
+            Die();
+        }
+    }
+
+    void Die()
+    {
+
+        Destroy(gameObject);
+    }
 
     void Awake()
     {

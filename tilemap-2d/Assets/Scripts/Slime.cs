@@ -7,7 +7,7 @@ public class Slime : EnemyController
     // Start is called before the first frame update
     void Start()
     {
-        health = 2;
+        //enemyHealth = 2;
     }
 
     // Update is called once per frame
