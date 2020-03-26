@@ -1786,22 +1786,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 2541601705350928969, guid: e8f688135532fd8468b9c28aadc60df5,
-        type: 3}
-      propertyPath: bulletPrefab
-      value: 
-      objectReference: {fileID: 4605401590975010420, guid: a645f2dab0845fa4195bf19e53494938,
-        type: 3}
-    - target: {fileID: 2541601705350928969, guid: e8f688135532fd8468b9c28aadc60df5,
-        type: 3}
-      propertyPath: maxSpeed
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2541601705350928969, guid: e8f688135532fd8468b9c28aadc60df5,
-        type: 3}
-      propertyPath: fireRate
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 2541601705350928970, guid: e8f688135532fd8468b9c28aadc60df5,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1857,11 +1841,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2541601705350928972, guid: e8f688135532fd8468b9c28aadc60df5,
-        type: 3}
-      propertyPath: m_Controller
-      value: 
-      objectReference: {fileID: 9100000, guid: 05caf6d0cc0961647ab70aefe59b7c42, type: 2}
     - target: {fileID: 2541601705350928973, guid: e8f688135532fd8468b9c28aadc60df5,
         type: 3}
       propertyPath: m_Name

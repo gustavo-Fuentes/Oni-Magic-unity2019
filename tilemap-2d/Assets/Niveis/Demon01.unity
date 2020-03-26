@@ -21264,11 +21264,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: -4547598634488182854, guid: 7cbd4e5ecd95b4b67b7056088c558179,
-        type: 3}
-      propertyPath: m_Material
-      value: 
-      objectReference: {fileID: 6200000, guid: 093bdce2fcd81874e8723d675515121a, type: 2}
     - target: {fileID: 105994, guid: 7cbd4e5ecd95b4b67b7056088c558179, type: 3}
       propertyPath: m_Name
       value: Player
@@ -21316,27 +21311,6 @@ PrefabInstance:
     - target: {fileID: 486240, guid: 7cbd4e5ecd95b4b67b7056088c558179, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 21209242, guid: 7cbd4e5ecd95b4b67b7056088c558179, type: 3}
-      propertyPath: m_FlipX
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 296474615, guid: 7cbd4e5ecd95b4b67b7056088c558179, type: 3}
-      propertyPath: m_Material
-      value: 
-      objectReference: {fileID: 6200000, guid: 093bdce2fcd81874e8723d675515121a, type: 2}
-    - target: {fileID: 296474616, guid: 7cbd4e5ecd95b4b67b7056088c558179, type: 3}
-      propertyPath: jumpForce
-      value: 175
-      objectReference: {fileID: 0}
-    - target: {fileID: 296474616, guid: 7cbd4e5ecd95b4b67b7056088c558179, type: 3}
-      propertyPath: bulletPrefab
-      value: 
-      objectReference: {fileID: 4605401590975010420, guid: a645f2dab0845fa4195bf19e53494938,
-        type: 3}
-    - target: {fileID: 1166455423, guid: 7cbd4e5ecd95b4b67b7056088c558179, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -0.148
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7cbd4e5ecd95b4b67b7056088c558179, type: 3}
