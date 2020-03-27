@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 3339139049905254465}
   - component: {fileID: 67902763930143498}
   - component: {fileID: 6391201800829063104}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Fire
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -116,7 +116,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe9bc606f87323f4d83369dba68f1dab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 1
+  speed: 1.58
+  damage: 40
 --- !u!50 &67902763930143498
 Rigidbody2D:
   serializedVersion: 4
