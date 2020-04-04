@@ -27,7 +27,6 @@ public class EnemyController : MonoBehaviour
 
     void Die()
     {
-
         Destroy(gameObject);
     }
 
@@ -36,7 +35,7 @@ public class EnemyController : MonoBehaviour
         rb2d = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
         sprite = GetComponent<SpriteRenderer>();
-        player = GameObject.Find("Player").GetComponent<Transform> ();
+        //player = GameObject.Find("Player").GetComponent<Transform> ();
     }
 
     protected float PlayerDistance()
