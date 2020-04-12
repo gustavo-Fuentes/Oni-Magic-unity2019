@@ -666,6 +666,14 @@
       <Project>{190825e4-2e53-4e72-1755-9f8a2c91c3df}</Project>
       <Name>Unity.VSCode.Editor</Name>
     </ProjectReference>
+    <ProjectReference Include="AstarPathfindingProject.csproj">
+      <Project>{b192bc9f-1118-4ad9-5135-964bd36c4cff}</Project>
+      <Name>AstarPathfindingProject</Name>
+    </ProjectReference>
+    <ProjectReference Include="PackageToolsEditor.csproj">
+      <Project>{70ffbb4b-f60b-4b0e-d2d5-fd724465682b}</Project>
+      <Name>PackageToolsEditor</Name>
+    </ProjectReference>
     <ProjectReference Include="Unity.TextMeshPro.Editor.csproj">
       <Project>{c1811097-eae1-ae9c-a72f-f65c72700344}</Project>
       <Name>Unity.TextMeshPro.Editor</Name>
@@ -681,6 +689,10 @@
     <ProjectReference Include="Unity.2D.Animation.Triangle.Runtime.csproj">
       <Project>{100ea24b-f7ba-8790-3a52-dae4744a60f6}</Project>
       <Name>Unity.2D.Animation.Triangle.Runtime</Name>
+    </ProjectReference>
+    <ProjectReference Include="AstarPathfindingProjectEditor.csproj">
+      <Project>{e80bae1e-0c5c-4d0a-1911-ade8668016b9}</Project>
+      <Name>AstarPathfindingProjectEditor</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.CollabProxy.Editor.csproj">
       <Project>{5b1bafa7-6a3e-03eb-4bc3-8b5926ef8223}</Project>
@@ -733,18 +745,6 @@
     <ProjectReference Include="UnityEditor.UI.csproj">
       <Project>{81a21735-eabf-cc79-910f-7c9ae1501028}</Project>
       <Name>UnityEditor.UI</Name>
-    </ProjectReference>
-    <ProjectReference Include="AstarPathfindingProject.csproj">
-      <Project>{b192bc9f-1118-4ad9-5135-964bd36c4cff}</Project>
-      <Name>AstarPathfindingProject</Name>
-    </ProjectReference>
-    <ProjectReference Include="PackageToolsEditor.csproj">
-      <Project>{70ffbb4b-f60b-4b0e-d2d5-fd724465682b}</Project>
-      <Name>PackageToolsEditor</Name>
-    </ProjectReference>
-    <ProjectReference Include="AstarPathfindingProjectEditor.csproj">
-      <Project>{e80bae1e-0c5c-4d0a-1911-ade8668016b9}</Project>
-      <Name>AstarPathfindingProjectEditor</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
